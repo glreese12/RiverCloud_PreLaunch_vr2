@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-LaunchSoon::Application.config.secret_token = '476bd6dc528397a71abd5c35066ba2fba915c07576774cf5481cc0e5279cd897496d1cce20cab28f3dad3ba04f45ccd0cb9a4a41636cd6feb2de8de143a97eb3'
+LaunchSoon::Application.config.secret_token = 'e024f13207fcf62e85e764536c07714908c8b4a40f73c88ec2302957014e5ece623f2a10320990bd6d63c49910abc5b36e66ede3f3f46529772b1cc1167cb101'

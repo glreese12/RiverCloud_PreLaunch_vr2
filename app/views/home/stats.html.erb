@@ -2,14 +2,14 @@
   <div class="large-8 small-12 columns large-centered">
     <div class="panel radius" style="margin-top:50px;">
       <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
-      <h4 class="subheader" ><%= raw SITE_BLURB %></h4>
+      <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
 
       <div class="row collapse">
         <div class="small-12 columns">
           <h3 style="text-align:center;">You've referred <strong><%= @rcount %></strong> people.</h3>
 
-          <h6>
-            The more friends you invite, the sooner you'll get access!<br>Share your personalized link or use the buttons below:
+          <h6 style="text-align:center">
+            Invite more friends for a chance at "early access" pass!</h6><br><br><h6>*Share your personalized link or use the buttons below:
           </h6>
 
           <p><input type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @rcode %>"></p>
