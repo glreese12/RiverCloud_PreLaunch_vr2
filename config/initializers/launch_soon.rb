@@ -14,10 +14,13 @@ SITE_TITLE = 'RiverCloud, LLC'
 SITE_KEYWORDS = 'key, words'
 
 # Description for the site, also used in Tweet so keep it short:
-SITE_DESCRIPTION = 'Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
+SITE_DESCRIPTION = '~Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
 
 # Blurb about site, displayed on main page:
-SITE_BLURB = 'Your reflections, real times ~ Coming soon!'
+SITE_BLURB = '~Reflections, Real Times ~'
+
+#Site Coming soon! 
+SITE_COMING = "COMING SOON!"
 
 # Google Analytics code for the site:
 SITE_GOOGLE_ANALYTICS = 'UA-54543009-1'

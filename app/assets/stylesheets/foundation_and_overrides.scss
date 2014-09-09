@@ -825,6 +825,7 @@ $magellan-padding: 0 !important;
 // $panel-function-factor: -11%;
 // $panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
 
+
 // We use these to set default inner padding and bottom margin
 // $panel-margin-bottom: rem-calc(20);
 // $panel-padding: rem-calc(20);
@@ -1319,11 +1320,37 @@ $sub-nav-active-cursor: default;
 // $range-slider-handle-bg-hover-color: scale-color($primary-color, $lightness: -12%);
 // $range-slider-handle-cursor: pointer;
 
+//All the overrides for launch page
+
 @import 'foundation';
 
 // Make sure the page stretches to fit the entire screen, vertically
 body,html{height:100%;}
+
 // Set the background image, and make sure it covers the entire page
 body{background: url(/assets/background_sm.jpg) center center fixed no-repeat;-moz-background-size: cover;background-size: cover;}
+
+//$include-html-panel-classes: $include-html-classes;
+
 // Make the Panel opaque
 div.panel{background: rgb(255,255,255);background: rgba(255,255,255,.8);}
+$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
+
+//Modify the radius/rounded
+.radius_cloud {
+$global-radius: 20px;
+$global-rounded: 1000px;
+}
+
+$panel-border-style: solid;
+
+//Added to adjust the buttons
+.feature-tiles {
+  $row-width: em-calc(600);
+  @include grid-row;
+
+  .columns, .column {
+    $column-gutter: 0;
+    @include grid-column;
+  }
+}
