@@ -1337,12 +1337,23 @@ div.panel{background: rgb(255,255,255);background: rgba(255,255,255,.8);}
 $panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
 
 //Modify the radius/rounded
-.radius_cloud {
-$global-radius: 20px;
-$global-rounded: 1000px;
-}
 
-$panel-border-style: solid;
+.custom-panel {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    //$bg:orange,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:20px,
+    //$global-radius: 20px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+}
+//$global-radius: 20px;
+//$global-rounded: 1000px;
+//}
+
+//$panel-border-style: solid;
 
 //Added to adjust the buttons
 .feature-tiles {

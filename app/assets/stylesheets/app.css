@@ -1,0 +1,7 @@
+
+ 
+#border-radius-combo {
+	-webkit-border-radius-left:  5px 80px 5px;
+	-moz-border-radius:  5px 80px 5px;
+	border-radius:  5px 80px 5px
+}
