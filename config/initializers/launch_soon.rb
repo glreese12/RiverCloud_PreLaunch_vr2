@@ -5,7 +5,7 @@ MAILCHIMP_API_KEY = '26e034b4b5b3c0b6f5e4634efeff6e6f-us9'
 MAILCHIMP_LIST_ID = 'ae80e85ff9'
 
 # This site's domain name, including the www. if required (ie: google.com):
-SITE_DOMAIN = 'localhost:3000'
+SITE_DOMAIN = 'rivercloud.co'
 
 # Title tag for the site:
 SITE_TITLE = 'RiverCloud'
