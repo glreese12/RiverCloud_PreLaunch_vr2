@@ -1334,7 +1334,7 @@ body{background: url(/assets/background_sm.jpg) center center fixed no-repeat;-m
 
 // Make the Panel opaque
 div.panel{background: rgb(255,255,255);background: rgba(255,255,255,.8);}
-$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
+//$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
 
 //Modify the radius/rounded
 

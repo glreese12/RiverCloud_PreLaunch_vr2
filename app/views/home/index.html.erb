@@ -1,5 +1,14 @@
+
+<div id="myCarousel" class="carousel container slide">
+  <div class="carousel-inner">
+            <div class="active item one"></div>
+            <div class="item two"></div>
+            <div class="item three"></div>
+  </div>
+</div>
+
 <div class="row">
-  <div class="large-7 small-12 columns large-centered">
+  <div class="col-lg-7 col-sm-7 columns">
     <div class="panel" id="border-radius-combo" style="margin-top:50px;">
       <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
       <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
@@ -7,12 +16,16 @@
 
       <p style="text-align:center;"><em>Sign up to stay informed:</em></p>
 
-      <div class="row collapse">
+      <div class="row">
         <%= form_tag '/interested' do %>
-          <div class="large-9 small-8 columns feature-tiles"><%= email_field_tag 'email', nil, placeholder: 'Email address' %></div>
-          <div class="large-3 small-4 columns feature-tiles"><%= submit_tag 'Yes!', class: 'postfix radius button' %></div>
+          <div class="col-lg-6 col-sm-6 columns"><%= email_field_tag 'email', nil, placeholder: 'Email address' %></div>
+      </div>    
+      <div class="row"> 
+      <center>   
+          <div class="col-lg-9 col-sm-8 columns"><%= submit_tag 'Yes!', class: 'btn btn-primary', :style=>'width: 200px;' %></div>
           <%= hidden_field_tag :ref, "#{@ref}" %>
         <% end %>
+      </center>  
       </div>
 
       <h6 class="subheader" style="text-align:center;">
@@ -24,8 +37,9 @@
 
 <% unless alert.blank? %>
   <div class="row">
-    <div class="large-5 small-12 columns large-centered">
+    <div class="col-lg-5 col-sm-12  large-centered">
       <div data-alert class="alert-box radius"><%= alert %></div>
     </div>
   </div>
 <% end %>
+

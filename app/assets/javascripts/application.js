@@ -12,7 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap 
 //= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+$(document).ready(function() {
+    $('.carousel').carousel({interval: 7000});
+  });
