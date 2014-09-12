@@ -17,7 +17,7 @@ SITE_KEYWORDS = 'key, words'
 SITE_DESCRIPTION = '~Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
 
 # Blurb about site, displayed on main page:
-SITE_BLURB = '~Reflections in Real Times ~'
+SITE_BLURB = '~Reflections in real times ~'
 
 #Site Coming soon! 
 SITE_COMING = "COMING SOON!"
@@ -26,4 +26,4 @@ SITE_COMING = "COMING SOON!"
 SITE_GOOGLE_ANALYTICS = 'UA-54543009-1'
 
 # Twitter name for site:
-TWITTER_NAME = 'TWITTERUSERNAME'
+TWITTER_NAME = 'RiverCloudCo'

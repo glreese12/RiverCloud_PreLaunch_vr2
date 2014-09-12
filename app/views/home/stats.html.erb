@@ -1,3 +1,6 @@
+<%= render 'layouts/header' %> 
+
+
 <div id="myCarousel" class="carousel container slide">
   <div class="carousel-inner">
             <div class="active item one"></div>
@@ -10,16 +13,17 @@
 
 <div class="row">
   <div class="col-lg-8 col-sm-12 columns large-centered">
-    <div class="panel" id="border-radius-combo" style="margin-top:50px;">
+    <div class="panel" id="border-radius-combo" style="margin-top:80px;">
       <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
       <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
+      <h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4>
 
       <div class="row">
         <div class="col-sm-12 columns">
           <h3 style="text-align:center;">You've referred <strong><%= @rcount %></strong> people.</h3>
 
           <h6 style="text-align:center">
-            Invite more friends for a chance at "early access" pass!</h6><br><br><h6>*Share your personalized link or use the buttons below:
+            Invite more friends and get RiverCloud SWAG!</h6><br><br><h6>**Share personalized link or use buttons below with friends!!**
           </h6>
 
           <p><input type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @rcode %>"></p>

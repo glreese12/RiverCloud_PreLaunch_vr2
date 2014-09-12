@@ -1,39 +1,45 @@
 
-<div id="myCarousel" class="carousel container slide">
-  <div class="carousel-inner">
-            <div class="active item one"></div>
-            <div class="item two"></div>
-            <div class="item three"></div>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-lg-7 col-sm-7 columns">
-    <div class="panel" id="border-radius-combo" style="margin-top:50px;">
-      <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
-      <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
-      <h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4>
+  <%= render 'layouts/header' %> 
 
-      <p style="text-align:center;"><em>Sign up to stay informed:</em></p>
-
-      <div class="row">
-        <%= form_tag '/interested' do %>
-          <div class="col-lg-6 col-sm-6 columns"><%= email_field_tag 'email', nil, placeholder: 'Email address' %></div>
-      </div>    
-      <div class="row"> 
-      <center>   
-          <div class="col-lg-9 col-sm-8 columns"><%= submit_tag 'Yes!', class: 'btn btn-primary', :style=>'width: 200px;' %></div>
-          <%= hidden_field_tag :ref, "#{@ref}" %>
-        <% end %>
-      </center>  
+ <div id="myCarousel" class="carousel container slide">
+        <div class="carousel-inner">
+                  <div class="active item one"></div>
+                  <div class="item two"></div>
+                  <div class="item three"></div>
+        </div>
       </div>
 
-      <h6 class="subheader" style="text-align:center;">
-        (Follow us on <a href="http://twitter.com/<%= TWITTER_NAME %>" target="_blank">Twitter</a>.)
-      </h6>
+  <div id="topWrap" >
+    <div class="container">
+        <div class="col-lg-7 col-sm-7 columns">
+          <div class="panel panel-default" id="border-radius-combo" style="margin-top:90px;">
+            <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
+            <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
+            <h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4>
+
+            <p style="text-align:center;"><em>Sign up to stay informed:</em></p>
+
+            <div class="row">
+              <%= form_tag '/interested' do %>
+                <div class="col-lg-6 col-sm-6 columns"><%= email_field_tag 'email', nil, placeholder: 'Email address' %></div>
+            </div>    
+            <div class="row"> 
+            <center>   
+                <div class="col-lg-9 col-sm-8 columns"><%= submit_tag 'Yes!', class: 'btn btn-primary', :style=>'width: 200px;' %></div>
+                <%= hidden_field_tag :ref, "#{@ref}" %>
+              <% end %>
+            </center>  
+            </div>
+
+            <h6 class="subheader" style="text-align:center;">
+              (Follow us on <a href="http://twitter.com/<%= TWITTER_NAME %>" target="_blank">Twitter</a>.)
+            </h6>
+          </div>
+        </div>
     </div>
   </div>
-</div>
+
 
 <% unless alert.blank? %>
   <div class="row">
@@ -42,4 +48,216 @@
     </div>
   </div>
 <% end %>
+
+  <div id="featureWrap" class="panel" style="margin-top:10px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 text-center feature">
+          <i class="fa fa-tablet icon"></i>
+          <h3>Cloud-based Application</h3>
+          <p>
+          The RiverCloud application makes is simple to load and organize photos by event. You can invite friends and share in the access of a specifc event; allowing collabratively capturing the experience.  
+        </div>
+        <div class="col-sm-4 text-center feature">
+          <i class="fa fa-pencil icon"></i>
+          <h3>Photo Streaming Modes</h3>
+          <p>
+          Register your RiverCloud digital picture frames (aka Airframes) with the application to enable real time streaming of your photos to the device. Your family or friends thousands of miles away enjoy your own adventure channel. 
+          </p>
+        </div>
+        <div class="col-sm-4 text-center feature">
+          <i class="fa fa-star icon"></i>
+          <h3>Airframes</h3>
+          <p>
+          The RiverCloud's specialized Airframes come in multiple styles to suite a variety of needs (classic, sport, freaky). Auto-generated title pages introduce the experience. The high quality LCD provides high definition like quality. The application cycle mode, lets you schedule up to five steam channels. You are a star! 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /featureWrap -->
+
+  <div id="productWrap" class="altWrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="sectionTitle">RiverCloud Application</h2>
+          <h3 class="sectionTitle">~Reflections of your life, real time~</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+          <div class="imgWrap">
+            <img class="img-responsive" src="assets/img/tablet.png"/>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="productFeatures clearfix">
+            <div class="col-xs-2 icon">
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-trophy fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-10">
+              <h3>Amazing features</h3>
+              <p>Create and organizing photos by event. Allow friends the ability to share in the experience. Easily share with social media and stream to RiverCloud specialized frames</p>
+            </div>
+            <div class="col-xs-2 icon">
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-10">
+              <h3>Fully customizeable</h3>
+              <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+            </div>
+            <div class="col-xs-2 icon">
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-10">
+              <h3>Clean &amp; functional layout</h3>
+              <p>Vestibulum tellivizzle i saw beyonces tizzles and my pizzle went crizzle primis gangsta faucibus fizzle luctizzle izzle stuff posuere mammasay mammasa mamma oo sa Daahng dawg.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /productWrap -->
+  
+  <div id="pricingWrap" class="panel" style="margin-top:20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="sectionTitle">Ready to get started?</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="priceTable">
+            <li class="title">Free Plan</li>
+            <li class="description">For Followers</li>
+            <li class="price">No Charge</li>
+            <ul class="features">
+              <li>Access sponsored events</li>
+              <li>Load photos to select sponsored events</li>
+              <li>Get invited to participate in private events (Super and Awesome plans)</li>
+          
+            </ul>
+            <li class="call">
+              <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="priceTable alt">
+            <li class="title">Super Plan</li>
+            <li class="description">For super people</li>
+            <li class="price">$19.99</li>
+            <ul class="features">
+              <li>Access to sponsored events</li>
+              <li>Create private events. Invite 5 friends per event (*must be on free plan)</li>
+              <li>Register up to five Airframes (*sold separately)</li>
+            </ul>
+            <li class="call">
+              <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="priceTable">
+            <li class="title">Family Plan</li>
+            <li class="description">For awesome families</li>
+            <li class="price">$29.99</li>
+            <ul class="features">
+              <li>Register 4 family members to share the app</li>
+              <li>All are able to create events</li>
+              <li>Register up to five Airframes</li>
+              <li>Includes one Airframe</li>
+            </ul>
+            <li class="call">
+              <a class="btn btn-success btn-lg" href="#">Buy Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /pricingWrap -->
+  
+  <div id="testimonialsWrap" class="altWrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="sectionTitle">What people say</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <div class="quote">"For the first time we are seeing photos of our family in a timely manner in our living room! And they live hundreds of miles away!!"</div>
+                <div class="author">Bob Rahner</div>
+              </li>
+              <li>
+                <div class="quote">"Our son plays soccer, and now we can all load photos of the soccer match into an event. Even better we can select the best and easily push them to our living room wall! "</div>
+                <div class="author">Jennifer Reese</div>
+              </li>
+              <li>
+                <div class="quote">"We captured our amazing ski day on the application and dynamically streamed it to our friends sitting at home. They hated us ;-) We loved it! "</div>
+                <div class="author">Josh Winner</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /testimonialsWrap -->
+  
+  <div id="contactWrap" class="panel" style="margin-top:20px;">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+            <h2 class="sectionTitle">Contact us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <div class="blurb">
+            Want to chat? Send us a message. We'd love to hear from you!
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-sm-4 col-sm-offset-2">
+              <div class="inputContainer">
+              <label>Name</label>
+                <input type="text" name="contactName" id="contactName" value="" class="form-control" autocomplete="off" />
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="inputContainer">
+              <label class="screen-reader-text">Email</label>
+                <input type="text" name="email" id="email" value="" class="form-control" autocomplete="off"  />
+              </div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="inputContainer">
+              <label class="screen-reader-text">Message</label>
+                <textarea name="comments" id="commentsText" class="form-control" autocomplete="off"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-2">
+              <button name="submit" type="button" class="btn btn-primary btn-lg">Send</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div> <!-- /contactWrap -->
+
+
 

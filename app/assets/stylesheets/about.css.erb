@@ -1,0 +1,51 @@
+#my_photo{
+	width:300px;
+	height:200px;
+	border: white 3px solid;
+	border-radius: 10px;
+}
+h1{
+	color:white;
+	margin:20px;
+}
+img{
+	transform:rotate(180deg);
+	margin: 20px;
+}
+html{
+	background:black;
+}
+body{
+	text-align:center;
+	background: url(<%= asset_path "summer.jpg" %>) no-repeat;
+	background-position: center;
+	height:800px;
+}
+ul{
+	list-style-type:none;
+	border-radius:10px;
+}
+li{
+	color:white;
+}
+
+@media (max-width:1000px){
+	.container{
+		width: 600px;
+	}
+}
+@media (max-width:599px){
+	.container{
+		width: 300px;
+	}
+}
+.accordion-group{
+	background:black;
+}
+.accordion-toggle{
+	color:white;
+	font-weight:bold;
+}
+.accordion-inner{
+	color:white;
+}

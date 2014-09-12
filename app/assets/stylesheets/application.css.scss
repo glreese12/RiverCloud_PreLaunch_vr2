@@ -9,10 +9,13 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require bootstrap
+ *= require bootstrap-theme
  *= require_self
+ * require product
  *= require app
+ *= require custom
  *= require foundation_and_overrides
- *= require_tree .
+ * require_tree .
  */
 
 

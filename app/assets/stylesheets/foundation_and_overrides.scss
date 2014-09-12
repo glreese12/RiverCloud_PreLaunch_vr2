@@ -1328,27 +1328,27 @@ $sub-nav-active-cursor: default;
 body,html{height:100%;}
 
 // Set the background image, and make sure it covers the entire page
-body{background: url(/assets/background_sm.jpg) center center fixed no-repeat;-moz-background-size: cover;background-size: cover;}
+//body{background: url(/assets/background_sm.jpg) center center fixed no-repeat;-moz-background-size: cover;background-size: cover;}
 
 //$include-html-panel-classes: $include-html-classes;
 
 // Make the Panel opaque
-div.panel{background: rgb(255,255,255);background: rgba(255,255,255,.8);}
+//div.panel{background: rgb(255,255,255);background: rgba(255,255,255,.8);}
 //$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
 
 //Modify the radius/rounded
 
-.custom-panel {
-  @include panel(
+//.custom-panel {
+//  @include panel(
     // Sets the panel background color. Default: $panel-pg
     //$bg:orange,
     // Sets the panel padding amount. Default: $panel-padding
-    $padding:20px,
+//    $padding:20px,
     //$global-radius: 20px,
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
-    $adjust:true
-  );
-}
+  //  $adjust:true
+ // );
+//}
 //$global-radius: 20px;
 //$global-rounded: 1000px;
 //}
