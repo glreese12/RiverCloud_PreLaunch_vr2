@@ -122,6 +122,8 @@ GEM
     flog (4.1.2)
       ruby_parser (~> 3.1, > 3.1.0)
       sexp_processor (~> 4.0)
+    font-awesome-rails (4.2.0.0)
+      railties (>= 3.2, < 5.0)
     formatador (0.2.5)
     foundation-rails (5.3.1.0)
       railties (>= 3.1.0)
@@ -372,6 +374,7 @@ DEPENDENCIES
   coveralls
   factory_girl_rails
   faker
+  font-awesome-rails
   foundation-rails
   guard-rspec
   guard-spork
