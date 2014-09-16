@@ -12,9 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.flexslider
 //= require bootstrap 
 //= require foundation
-//= require_tree .
+// require_tree .
 
 //$(function(){ $(document).foundation(); });
 
@@ -23,18 +24,21 @@ $(document).ready(function() {
     $('.carousel').carousel({interval: 7000});
 
 
-	/*$('.mobileSlider').flexslider({
-		animation: "slide",
+/*     $('.flexslider').flexslider(); */
+
+
+	$('.mobileSlider').flexslider({
+		animation: "fade",
 		slideshowSpeed: 3000,
 		controlNav: false,
-		directionNav: true,
+		directionNav: false,
 		prevText: "&#171;",
 		nextText: "&#187;"
 	});
 	$('.flexslider').flexslider({
 		animation: "slide",
 		directionNav: false
-	}); */
+	}); 
 		
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {

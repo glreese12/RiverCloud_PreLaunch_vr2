@@ -42,5 +42,6 @@ end
 gem 'coveralls', require: false
 gem 'jquery-rails'
 gem 'mailchimp-api'
+gem 'flexslider'
 gem 'font-awesome-rails'
 gem 'rails', '3.2.19'

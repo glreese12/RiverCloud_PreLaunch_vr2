@@ -1,4 +1,4 @@
-<div id="featureWrap" class="panel" style="margin-top:10px;">
+<div id="featureWrap" class="altWrap" style="margin-top:10px;">
     <div class="container">
       <div class="row">
         <div class="col-sm-4 text-center feature">
@@ -25,54 +25,153 @@
     </div>
   </div> <!-- /featureWrap -->
 
- <div id="productWrap" class="altWrap">
+
+ <div id="applicationWrap" class="panel" style="margin-top:20px;">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2 class="sectionTitle">RiverCloud AirFrame</h2>
+          <h2 class="sectionTitle">Application</h2></br></br>
           <h3 class="sectionTitle">~Reflections of your life, real time~</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-md-5 col-md-offset-1">
-          <div class="imgWrap">
-            <h3 style="text-align: center">AirFrame Sleek</h3>
-            <img class="img-responsive" src=<%= asset_path "web-frame.png" %>/></br></br></br>
-            <h3 style="text-align: center">AirFrame Classic</h3>
-            <img class="img-responsive" src=<%= asset_path "blackframe.png" %>/>
-          </div>
+      <div class="imgWrap">
+          <!--  <h3 style="text-align: center">AirFrame Modern</h3>  -->
+         <!--  <img class="img-responsive" src=<%# asset_path "web-frame.png" %>/></br></br></br> -->
+       </br>
+         <div class="mobile_app">
+            <div class="mobileSlider">
+              <ul class="slides apps">
+                <li>
+                 <img class="img-responsive" src=<%= asset_path "rc_frontpage.jpg" %>/>
+                </li>
+                <li>
+                  <img class="img-responsive" src=<%= asset_path "rc_eventpage.jpg" %>/> 
+                </li>
+                <li>
+                  <img class="img-responsive" src=<%= asset_path "rc_photopage.jpg" %>/> 
+                </li>
+                 <li>
+                  <img class="img-responsive" src=<%= asset_path "rc_selectimages.jpg" %>/> 
+                </li>
+              </ul>
+            </div>
+         </div> 
+           <!-- <img class="img-responsive hidden-xs" src=<%# asset_path "blackframe.png" %>/></center> -->
+       </div> 
         </div>
         <div class="col-md-5">
           <div class="productFeatures clearfix">
             <div class="col-xs-2 icon">
               <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-trophy fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
               </span>
             </div>
             <div class="col-xs-10">
-              <h3>Amazing features</h3>
-              <p>RiverCloud makes it easy to setup and register the frame. The collaborative application lets friends and family join in the fun.<p>
+              <h3>Collaborative</h3>
+              <p>RiverCloud's event-driven model provides an easy to use platform to organize and manage your family and friends photos during an event. 
             </div>
             <div class="col-xs-2 icon">
               <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-cog fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-cog fa-spin fa-stack-1x fa-inverse"></i>
               </span>
             </div>
             <div class="col-xs-10">
-              <h3>Fully automated</h3>
-              <p>RiverCloud stream mode automates image-flows to your frame. Scheduler manages multiple events at different times, keeping the frame fresh and current! </p>
+              <h3>Image Streaming</h3>
+              <p>RiverCloud's stream-mode automates image-flows to your frame. The event-driven structure and streaming provide themed based channels for the AirFrame show.  </p>
             </div>
             <div class="col-xs-2 icon">
               <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+              <i class="fa fa fa-lock fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-10">
+              <h3>Secure Experiene</h3>
+              <p>RiverCloud's encyrpted technology keeps your photos safe and secure. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+ <div id="productWrap" class="altWrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 class="sectionTitle">AirFrame</h2>
+          <h3 class="sectionTitle">~Reflections of your life, real time~</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+      <div class="imgWrap"><center> 
+            <h3 style="text-align: center">AirFrame Modern</h3> 
+         <!--  <img class="img-responsive" src=<%# asset_path "web-frame.png" %>/></br></br></br> -->
+         <div class="mobile">
+            <div class="mobileSlider">
+              <ul class="slides modern">
+                <li>
+                  <img src=<%= asset_path "summer.jpg" %>/>
+                </li>
+                <li>
+                  <img src=<%= asset_path "fall.jpg" %>/>
+                </li>
+              </ul>
+            </div>
+         </div> 
+          <h3 class="hidden-xs" style="text-align: center">AirFrame Classic</h3>
+          <div class="mobile_classic hidden-xs">
+            <div class="mobileSlider">
+              <ul class="slides classic">
+                <li>
+                  <img src=<%= asset_path "ocean-clip.jpg" %>/>
+                </li>
+                <li>
+                  <img src=<%= asset_path "winter.jpg" %>/>
+                </li>
+              </ul>
+            </div>
+         </div> 
+           <!-- <img class="img-responsive hidden-xs" src=<%# asset_path "blackframe.png" %>/></center> -->
+        </div> 
+        </div>
+        <div class="col-md-5">
+          <div class="productFeatures clearfix">
+            <div class="col-xs-2 icon">
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-film fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-10">
+              <h3>Amazing Features</h3>
+              <p>RiverCloud AirFrames send notification that keep you informed on new content. The Airframes keep the content organized and easily accessible.<p>
+            </div>
+            <div class="col-xs-2 icon">
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-tasks fa-stack-1x fa-inverse"></i>
+              </span>
+            </div>
+            <div class="col-xs-10">
+              <h3>Easily Configured</h3>
+              <p>AirFrames have mulitple modes to easily configure and adjust. Auto-mode will automatically show the most recent pushed content.</p>
+            </div>
+            <div class="col-xs-2 icon">
+              <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
               </span>
             </div>
             <div class="col-xs-10">
               <h3>Clean &amp; Stylish Models</h3>
-              <p>The Ariframes sharp clean artistic elements incoporate digital zen. Find a spot, turn it one and let the magic happen. </p>
+              <p>The AriFrames sharp clean artistic elements incoporate digital zen. Find a spot, turn it one and let the magic happen. </p>
             </div>
           </div>
         </div>
@@ -84,7 +183,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2 class="sectionTitle">RiverCloud Application</h2>
+          <h2 class="sectionTitle">Packages</h2>
         </div>
       </div>
       <div class="row">
@@ -94,8 +193,8 @@
             <li class="description">For Followers</li>
             <li class="price">No Charge</li> 
             <ul class="features">
-              <li>Access sponsored events</li>
-              <li>Navigate sponsored events</li>
+              <li>Access to application</li>
+              <li>Access to sponsored events</li>
               <li>Join super friends events</li>
               <li>Load photos to friends events</li>
           
