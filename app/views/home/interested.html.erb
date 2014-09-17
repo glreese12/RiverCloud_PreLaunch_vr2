@@ -8,20 +8,21 @@
   </div>
 </div>
 
+
 <div class="row">
   <div class="large-8 small-12 columns large-centered">
-    <div class="panel radius" id="border-radius-combo" style="margin-top:50px;">
+    <div class="hdWrap" id="border-radius-combo" style="margin-top:90px; margin-right:10px; margin-left:10px;">
       <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
-      <h4 class="subheader" ><%= raw SITE_BLURB %></h4>
+      <h4 class="subheader" style="text-align:center;" ><%= raw SITE_BLURB %></h4>
       <h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4>
 
       <div class="row">
-        <div class="small-12 columns">
+        <div class="small-12 columns" style="text-align:center;">
           <h6>
             Invite more friends and get early access pass!</h6><br><br><h6>**Share personalized link or use buttons below with friends!!**
           </h6>
 
-          <p><input type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @referral_code %>"></p>
+          <p><input class="form-control" type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @referral_code %>"></p>
 
           <p style="text-align:center;">
             <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://<%= "#{SITE_DOMAIN}/?ref=#{@referral_code}" %>" data-text="I'm in line for @<%= TWITTER_NAME %> <%= SITE_DESCRIPTION %>" data-via="<%= TWITTER_NAME %>" data-size="small" data-dnt="true">Tweet</a>
@@ -38,5 +39,6 @@
     </div>
   </div>
 </div>
+
 
     <%= render 'productinfo' %> 

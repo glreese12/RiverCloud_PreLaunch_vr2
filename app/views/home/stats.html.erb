@@ -13,7 +13,7 @@
 
 <div class="row">
   <div class="col-lg-8 col-sm-12 columns large-centered">
-    <div class="panel" id="border-radius-combo" style="margin-top:80px;">
+    <div class="hdWrap" id="border-radius-combo" style="margin-top:90px; margin-right:10px; margin-left:10px;">
       <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
       <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
       <!--<h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4> -->
@@ -26,7 +26,7 @@
             Invite more friends and get early access pass!</h6><br><br><h6>**Share personalized link or use buttons below with friends!!**
           </h6>
 
-          <p><input type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @rcode %>"></p>
+          <p><input class='form-control' type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @rcode %>"></p>
 
           <p style="text-align:center;">
             <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://<%= "#{SITE_DOMAIN}/?ref=#{@rcode}" %>" data-text="I'm in line for @<%= TWITTER_NAME %> <%= SITE_DESCRIPTION %>" data-via="<%= TWITTER_NAME %>" data-size="small" data-dnt="true">Tweet</a>
