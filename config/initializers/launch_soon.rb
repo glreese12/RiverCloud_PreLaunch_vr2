@@ -17,7 +17,7 @@ SITE_KEYWORDS = 'key, words'
 SITE_DESCRIPTION = '~Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
 
 # Blurb about site, displayed on main page:
-SITE_BLURB = '~Reflections in real times ~'
+SITE_BLURB = '~Reflections in real time ~'
 
 #Site Coming soon! 
 SITE_COMING = "COMING SOON!"
