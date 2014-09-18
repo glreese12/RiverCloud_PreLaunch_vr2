@@ -17,13 +17,11 @@
       <h1 style="text-align:center;"><%= SITE_TITLE %></h1>
       <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
       <!--<h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4> -->
-
       <div class="row">
         <div class="col-sm-12 columns">
           <h3 style="text-align:center;">You've referred <strong><%= @rcount %></strong> people.</h3>
-
-          <h6 style="text-align:center">
-            Invite more friends and get early access pass!</h6><br><br><h6>**Share personalized link or use buttons below with friends!!**
+          <h4 style="text-align:center">
+            Invite more friends for chance at early access pass!</h6><br><h6>**Share link or use buttons below with friends!!**
           </h6>
 
           <p><input class='form-control' type="text" readonly onClick="select()" value="http://<%= SITE_DOMAIN %>/?ref=<%= @rcode %>"></p>
