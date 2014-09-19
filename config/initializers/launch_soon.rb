@@ -8,7 +8,7 @@ MAILCHIMP_LIST_ID = 'ae80e85ff9'
 SITE_DOMAIN = 'rivercloud.co'
 
 # Title tag for the site:
-SITE_TITLE = 'RiverCloud'
+SITE_TITLE = 'RiverCloud TV'
 
 # Keywords for the site:
 SITE_KEYWORDS = 'key, words'
@@ -17,7 +17,7 @@ SITE_KEYWORDS = 'key, words'
 SITE_DESCRIPTION = '~Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
 
 # Blurb about site, displayed on main page:
-SITE_BLURB = '~Reflections in real time ~'
+SITE_BLURB = '~ Channel your experience ~'
 
 #Site Coming soon! 
 SITE_COMING = "COMING SOON!"
