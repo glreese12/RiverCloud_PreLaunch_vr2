@@ -8,7 +8,7 @@ MAILCHIMP_LIST_ID = 'ae80e85ff9'
 SITE_DOMAIN = 'rivercloud.co'
 
 # Title tag for the site:
-SITE_TITLE = 'RiverCloud TV'
+SITE_TITLE = 'RiverCloud.tv'
 
 # Keywords for the site:
 SITE_KEYWORDS = 'key, words'
