@@ -25,6 +25,8 @@ class HomeController < ApplicationController
 
     begin
       user_info = mailchimp.lists.member_info(MAILCHIMP_LIST_ID, ['email' => "#{email}"])
+      logger.info "Print User Info"
+      logger.info user_info
     rescue => e
       flash.now[:alert] = 'There was a problem getting info on this email address from MailChimp'
       return render :index
