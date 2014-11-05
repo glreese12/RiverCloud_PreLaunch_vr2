@@ -62,7 +62,7 @@ class HomeController < ApplicationController
     else # The user is in the list
       @rcount = user_info['data'][0]['merges']['RCOUNT']
       @rcode  = user_info['data'][0]['merges']['RCODE']
-      flash.now[:alert] = "You already part of the team ~ More to come soon!"
+      flash.now[:alert] = "We have you on our list ~ More to come soon!"
 
 
       return render :index
@@ -140,7 +140,7 @@ class HomeController < ApplicationController
          end    
 
       
-    flash.now[:alert] = 'Thank you for you comments! You will be in touch shortly'
+    flash.now[:alert] = 'Thank you for you comments! We will be in touch.'
     return render :index
    
  end
