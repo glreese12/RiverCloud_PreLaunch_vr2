@@ -1,60 +1,258 @@
+<!-- Preloader -->
+		<div id="preloader">
+			<div id="status" class="text-center">
+				<div class="spinner">
+				  <div class="rect1"></div>
+				  <div class="rect2"></div>
+				  <div class="rect3"></div>
+				  <div class="rect4"></div>
+				  <div class="rect5"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Main -->
+		<section class="main text-center" id="home">
+			<div class="page">
+				<div class="wrapper">
+					<div class="container">
+						<!--<img src="<%# asset_path("logo/logo.png") %>" alt="Logo"> -->
+						<h2>RiverCloud</h2>
+						<h1 class="heading">coming soon</h1>
+						<p>
+							Community Network ~ Personalized Experinece 
+						</p>
+						<div class="row">
+							<div id="countdown"></div>
+						</div>
+						<!-- Subscription form -->
+						<!--<form class="form-inline signup" action="php/signupForm.php" role="form" id="signupForm"> -->
+						<%= form_tag '/interested', :class=> 'form-inline', :id=>"signupForm"  do %>  <!--:id => 'signupForm', :class => 'form-inline' do 	-->
+							<div class="form-group">
+								<!--<input type="email" name="email" class="form-control" placeholder="Email address"> -->
+								<%= email_field_tag 'email', nil, placeholder: 'Email address', class: 'form-control', :style=>"text-align:center" %>
+							</div>
+							<div class="form-group">
+								<!--<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left"><span class="ladda-label">Get notified!</span></button> -->
+								 <%= submit_tag 'Get notified', class: 'btn btn-theme ladda-button', 'data-style'=>"expand-left" %>
+							</div>
+							<%= hidden_field_tag :ref, "#{@ref}" %>
+						<% end %>	
+						 <div data-alert class="alert-box radius"><%= alert %></div>
+						<!--</form> --> 
+						<footer class="text-center">
+							<div class="social">
+								<a href="#" class="btn btn-theme"><i class="fa fa-facebook"></i></a> 
+								<a href="http://twitter.com/<%= TWITTER_NAME%>" target="_blank" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+							
+							<!--	<a href="#" class="btn btn-theme"><i class="fa fa-google-plus"></i></a>
+								<a href="#" class="btn btn-theme"><i class="fa fa-dribbble"></i></a>
+								<a href="#" class="btn btn-theme"><i class="fa fa-linkedin"></i></a> -->
+							</div>
+						</footer>
+					</div>
+					<div class="arrow-down">
+						<a class="scroll" href="#about" id="scroll"><i class="fa fa-angle-double-down"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- About -->
+		<section id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">About</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="lead">
+							<strong>RiverCloud, Inc</strong> is a community driven cloud-based network to support sharing  of personalized media content through RiverCloud.tv's specialized "LCD" digital frames.  
+						</p>
+						<p>RiverCloud's unique experience provides a collaborative cloud-based application to organize and manage personalized media content for distribution to registered RiverCloud.tv "LCD" digital frames. Whether your the adverturer or a business owner, this platform enables the sharing of relevant content through the community driven networks. Cheers!  
+						</p>
+						<div class="row">
+							<div class="col-sm-4 feature-box-container">
+								<div class="feature-box wow fadeInDown">
+									<div class="icon">
+										<i class="fa fa-tablet"></i>
+									</div>
+									<div class="description">
+										<h4>Cloud-Based Application</h4>
+										<p>RiverCloud's application makes it simple to collectively load and manage content.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 feature-box-container">
+								<div class="feature-box wow fadeInDown" data-wow-delay="0.2s">
+									<div class="icon">
+										<i class="fa fa-refresh fa-spin"></i> 
+									</div>
+									<div class="description">
+										<h4>Real-Time Streaming</h4>
+										<p>RiverCloud's platform supports real-time streaming of your personalized content
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 feature-box-container">
+								<div class="feature-box wow fadeInDown" data-wow-delay="0.4s">
+									<div class="icon">
+										<i class="fa fa-heart"></i>
+									</div>
+									<div class="description">
+										<h4>Personalized Experience</h4>
+										<p>RiverCloud.tv high-definition LCD digital frames bring the experience home.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Team -->
+		<section id="team" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Our team</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-sm-3 hidden-xs text-center team-member-container wow fadeInDown">
+						<div class="team-member">
+							<div class="team-member-img">
+								<img src="<%= asset_path("portraits/1.jpg") %>" alt="" class="img-responsive">
+							</div>
+							<div class="team-member-meta">
+								<h4>TBD</h4>
+								<span class="team-member-profession">Chief Technologist</span>
+								<p>Years of experience manageing cloud-based applications. Passionate about work and life. </p>
+								<div class="social">
+									<a href="#" class="btn btn-theme"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+									<!--<a href="#‎" class="btn btn-theme"><i class="fa fa-google-plus"></i></a> -->
+								</div>
+							</div>
+						</div> 
+					</div>  
+					<div class="col-sm-3 text-center team-member-container wow fadeInDown" data-wow-delay="0.2s">
+						<div class="team-member">
+							<div class="team-member-img">
+								<img src="<%= asset_path("portraits/G_ReeseCEO.jpg") %>" alt="" class="img-responsive">
+							</div>
+							<div class="team-member-meta">
+								<h4>Glenn Reese</h4>
+								<span class="team-member-profession">Founder/Chief Officer</span>
+								<p>15 years experience managing technical and business solutions. Driven by a vision to build a personalized network!
+								</p>
+								<div class="social">
+									<a href="http://facebook.com/glennr12" class="btn btn-theme"><i class="fa fa-facebook"></i></a>
+									<a href="http://twitter.com/GlennReese" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+									<!--<a href="#‎" class="btn btn-theme"><i class="fa fa-google-plus"></i></a> -->
+								</div>
+							</div>
+						</div> 
+					</div>
+					<div class="col-sm-3 text-center team-member-container wow fadeInDown" data-wow-delay="0.4s">
+						<div class="team-member">
+							<div class="team-member-img">
+								<img src="<%= asset_path("portraits/J_ReeseBiz2.jpg") %>" alt="" class="img-responsive">
+							</div>
+							<div class="team-member-meta">
+								<h4>Julie Reese</h4>
+								<span class="team-member-profession">Business Solutions</span>
+								<p>12 years of early childhood experience. Driven to more easily capture and share special  moments with family and friends.
+								</p>
+								<div class="social">
+									<a href="#" class="btn btn-theme"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+									<!--<a href="#‎" class="btn btn-theme"><i class="fa fa-google-plus"></i></a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="col-sm-3 text-center team-member-container wow fadeInDown" data-wow-delay="0.6s">
+				 		<div class="team-member">
+							<div class="team-member-img">
+								<img src="<%= asset_path("portraits/1.jpg") %>" alt="" class="img-responsive">
+							</div>
+							<div class="team-member-meta">
+								<h4>TBD</h4>
+								<span class="team-member-profession">Chief Product</span>
+								<p>Years of expereince listening to customers to guide the agile "product" life cycles</p>
+								<div class="social">
+									<a href="#" class="btn btn-theme"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="btn btn-theme"><i class="fa fa-twitter"></i></a>
+									<!--<a href="#‎" class="btn btn-theme"><i class="fa fa-google-plus"></i></a> -->
+								</div>
+							</div>
+						</div> 
+					</div> 
+				</div>
+			</div>
+		</section>
+		
+		<!-- Contact -->
+		<section id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">Contact</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<p>
+							Whether your an <strong>Investor</strong> or <strong>interested person</strong>, we would love to hear your comments. 
+						<ul class="list-contacts">
+							<!--<li><i class="fa fa-phone"></i> (123) 456-7890</li> -->
+							<li><i class="fa fa-mobile-phone"></i> (720)635-4904</li>
+							<li><i class="fa fa-map-marker"></i> 755 S. 44th St. <br> Boulder, CO 80305</li>
+							<li><i class="fa fa-envelope-o"></i> <a href="mailto:info@seventytwo.com">product@rivercloud.co</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+					<!--	<form class="form-horizontal" action="php/contactForm.php" method="post" role="form" id="contactForm">  -->
+					<%= form_tag '/contactinfo', :class=> 'form-horizontal', :id => "contactForm" do %> 
 
+							<div class="form-group">
+								<div class="col-sm-6">
+									<%= text_field_tag 'name', nil, placeholder: 'Name', :class=> "form-control" %>
+								<!--	<input type="text" name="name" class="form-control" placeholder="Name">	-->
+								</div>
+								<div class="col-sm-6">
+									<%= email_field_tag 'email', nil, placeholder: 'Email', :class=> 'form-control'%>
+									<!--<input type="text" name="contactEmail" class="form-control" placeholder="Email"> -->
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<!--<textarea name="message" class="form-control" rows="8" placeholder="Message"></textarea> -->
+                                    <%= text_area_tag 'message', nil, placeholder: 'Message',  :rows => 4, :class=> "form-control" %> 
 
-  <%= render 'layouts/header' %> 
-
- <div id="myCarousel" class="carousel container slide">
-        <div class="carousel-inner">
-                  <div class="active item one"></div>
-                  <div class="item two"></div>
-                  <div class="item three"></div>
-        </div>
-      </div>
-
-  <!--<div id="topWrap"> -->
-    <div class="container">
-      <div class="row">
-       <div class="col-lg-12 col-md-12"> 
-       <div class="panel default" id="border-radius-combo" style="margin-top:90px;"> 
-            <h2 style="text-align:center;"><%= SITE_TITLE %></h2>  
-            <h4 class="subheader" style="text-align:center" ><%= raw SITE_BLURB %></h4>
-            <h4 class="subheader" style="text-align:center" ><%= raw SITE_COMING %></h4>
-
-            <p style="text-align:center;"><em>Sign up and stay informed:</em></p>
-   
-             <div class="row">
-              <%= form_tag '/interested' do %>
-            
-                <div class="col-lg-12 col-md-12">
-                  <%= email_field_tag 'email', nil, placeholder: 'Email address', class: 'form-control', :style=>"text-align:center" %>
-                </div>
-              </br> 
-              <center> 
-                <div class="col-lg-12 col-md-12">
-                  <%= submit_tag 'Yes!', class: 'btn btn-primary', :style=>'width: 200px;' %>
-                </div>
-                <%= hidden_field_tag :ref, "#{@ref}" %>
-               </center> 
-              <% end %> 
-               </div>
-        
-
-            <h6 class="subheader" style="text-align:center;">
-              (Follow us on <a href="http://twitter.com/<%= TWITTER_NAME %>" target="_blank">Twitter</a>.)
-            </h6>
-          </div>
-      </div> 
-     </div>
-   </div>
- <!--</div>  -->
-
-
-<% unless alert.blank? %>
-  <div class="row">
-    <div class="col-lg-5 col-sm-12  large-centered">
-      <div data-alert class="alert-box radius"><%= alert %></div>
-    </div>
-  </div>
-<% end %>
-
-  
-    <%= render 'productinfo' %> 
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<!--<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left">
+										<span class="ladda-label">Submit</span>
+									</button> -->
+									<%= submit_tag 'Submit', class: 'btn btn-theme ladda-button', 'data-style'=>"expand-left" %>
+								</div>
+							</div>
+						<% end %>	
+						<!--</form> -->
+					</div>
+				</div>
+			</div>
+		</section>

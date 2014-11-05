@@ -8,15 +8,14 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require bootstrap
- *= require bootstrap-theme
- *= require font-awesome
+ *= require bootstrap.min
+ *= require font-awesome.min
+ *= require bootstrapValidator.min
+ *= require ladda-themeless.min
+ *= rewquire animate.min
  *= require_self
- *= require flexslider.css
  *= require app
- *= require custom
- * require foundation_and_overrides
- * require_tree .
  */
+
 
 

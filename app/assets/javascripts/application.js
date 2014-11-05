@@ -15,6 +15,15 @@
 //= require jquery.flexslider
 //= require bootstrap 
 //= require foundation
+//= require jquery.backstretch.min
+//= require jquery.countdown.min
+//= require bootstrapValidator.min
+//= require validator/emailAddress
+//= require spin.min
+//= requre ladda.min
+//= require retina.min
+//= require wow.min
+//= require init
 // require_tree .
 
 //$(function(){ $(document).foundation(); });

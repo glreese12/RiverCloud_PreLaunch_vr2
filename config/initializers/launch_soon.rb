@@ -4,6 +4,9 @@ MAILCHIMP_API_KEY = '26e034b4b5b3c0b6f5e4634efeff6e6f-us9'
 # Mailchimp Mailing List ID
 MAILCHIMP_LIST_ID = 'ae80e85ff9'
 
+# Mailchimp Contact List ID
+MAILCHIMP_CONTACT_ID = 'aca60eed1c'
+
 # This site's domain name, including the www. if required (ie: google.com):
 SITE_DOMAIN = 'rivercloud.co'
 
