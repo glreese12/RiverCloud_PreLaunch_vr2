@@ -228,12 +228,12 @@ a:after {
 /* ---------------------------------------------------------
  *	Footer
  * --------------------------------------------------------- */
-footer {
+/*footer {
   background: #1d1d1d;
   padding-top: 20px;
   bottom: 0;
   height: 60px;
- /* position: fixed;  */
+ position: fixed;  
   font-size: 13px;
 }
 footer div[class*="col-"] {
@@ -244,7 +244,7 @@ p.copyright {
   color: #fff;
   text-align: center;
   font-size: 14px;
-}
+} */
 /* 
  * Social icons
  * --------------------------------------------------------- */
