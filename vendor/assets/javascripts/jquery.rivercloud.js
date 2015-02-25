@@ -13,6 +13,7 @@
             statusTitle: true,
             statusAvatar: true,
             statusLogo: true,
+            titleBar: 'bottom', //top, bottom, none  
             appTitle: 'RiverCloud',
             subTitle: 'Real Time Updates ~ Relevant Content',
             styleType: 'fullSlide'
@@ -107,7 +108,7 @@
                      //   contentLogo += '<div class="sidebar-wrapper">';
                      //   contentLogo += '<div class="grid__item one-whole vacation-getaway">';
                      var  contentLogo = '<body>';
-                          contentLogo += '<div class="pull-left logo"><h4 class=""><i>RiverCloudTV</i></h4>';    
+                          contentLogo += '<div class="pull-left river-logo"><h4 class=""><i>RiverCloudTV</i></h4>';    
                      //   contentLogo +=  '</div>'; 
                           contentLogo +=  '</div>'; 
                           contentLogo += '</body>';
@@ -166,26 +167,27 @@
 
                 //full slide template
                // var contentLogo = '<body>';
-                var contentLogo = '<section id="" class="section-solid">'
-                contentLogo += '<div class="container">';
+                var contentLogo = '<section id="" class="river-solid">'
+                contentLogo += '<div class="river-container">';
                 contentLogo += '<div class="row">';
                 contentLogo += '<div class="col-sm-12">';
-                contentLogo += '<h3 class="section-title-padding"><i>'+ plugin.settings.appTitle + '</i> </h3>';
-                contentLogo += '<p class="section-subtitle">' + plugin.settings.subTitle + '</p>'
-                contentLogo += '<div class="section-title-border"></div>';
+                if(plugin.settings.titleBar == 'top') contentLogo += '<div class="river-title-border"></div>';
+                contentLogo += '<h3 class="river-title-padding"><i>'+ plugin.settings.appTitle + '</i> </h3>';
+                contentLogo += '<p class="river-subtitle">' + plugin.settings.subTitle + '</p>'
+                if(plugin.settings.titleBar == 'bottom') contentLogo += '<div class="river-title-border"></div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
                 contentLogo += '</section>'
-                contentLogo += '<div id="mediaContent" class="section-fullslide">'; //style="height:100%;width:100%;padding-top:100px;">'
+                contentLogo += '<div id="mediaContent" class="river-fullslide">'; //style="height:100%;width:100%;padding-top:100px;">'
                 contentLogo += '</div>';
 
-                contentLogo += '<section class="section-solid">'
-                contentLogo +='<div class="container">';
+                contentLogo += '<section class="river-solid">'
+                contentLogo +='<div class="river-container">';
                 contentLogo += '<div class="row">';
                 contentLogo +=  '<div class="col-sm-12">';
-                contentLogo += '<h3 class="section-title-footer"><i>' + title + '</i> </h3>';
+                contentLogo += '<h3 class="river-title-footer"><i>' + title + '</i> </h3>';
                 //contentLogo += '<h3 class="section-title"><i>' + title + '</i></h3>';
-                contentLogo += '<div class="section-title-border"></div>';
+                contentLogo += '<div class="river-title-border"></div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
@@ -238,14 +240,16 @@
 
 
                 //header information
-                var contentLogo = '<body>'
-                contentLogo += '<section id="portfolio" class=" section-solid">';
-                contentLogo +='<div class="container">';
+                // contentLogo = '<body>'
+
+                var contentLogo = '<section id="river-portfolio" class=" river-solid">';
+                contentLogo +='<div class="river-container">';
                 contentLogo += '<div class="row">';
                 contentLogo +=  '<div class="col-sm-12">';
-                contentLogo += '<div class="section-title-border"></div>';
-                contentLogo += '<h3 class="section-title-padding"><i>'+ plugin.settings.appTitle + '</i> </h3>';
-                contentLogo += '<p class="section-subtitle">' + plugin.settings.subTitle + '</p>'
+                if(plugin.settings.titleBar == 'top') contentLogo += '<div class="river-title-border"></div>';
+                contentLogo += '<h3 class="river-title-padding"><i>'+ plugin.settings.appTitle + '</i> </h3>';
+                contentLogo += '<p class="river-subtitle">' + plugin.settings.subTitle + '</p>'
+                if(plugin.settings.titleBar == 'bottom') contentLogo += '<div class="river-title-border"></div>';
                 //contentLogo += '<h3 class="section-title"><i>' + title + '</i></h3>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
@@ -253,8 +257,8 @@
                 contentLogo += '</section>';
 
                contentLogo += '<div class="GITheWall">';
-                contentLogo += '<section id="team" class="section" style="margin: 0; padding: 0; list-style-type: none;" >'; 
-                contentLogo += '<ul id="portfolio-container" style="margin: 0; padding: 0; list-style-type: none;" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">';
+                contentLogo += '<section id="team" class="river-section" style="margin: 0; padding: 0; list-style-type: none;" >'; 
+                contentLogo += '<ul id="river-portfolio-container" style="margin: 0; padding: 0; list-style-type: none;" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">';
                // contentLogo += '<ul id="portfolio-container"  data-groups=["'+ k +'"] style="margin: 0; padding: 0; list-style-type: none;" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">';
   
 
@@ -265,11 +269,11 @@
                       k+=imgNum;
                      // contentLogo += '<ul id="portfolio-container" data-groups=["'+ k +'"] style="margin: 0; padding: 0; list-style-type: none;" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">';
                       }
-                      contentLogo += '<li class="portfolio-item" style="margin: 0; padding: 0; list-style-type: none;" data-groups=["'+ k +'"]>';
+                      contentLogo += '<li class="river-portfolio-item" style="margin: 0; padding: 0; list-style-type: none;" data-groups=["'+ k +'"]>';
                       contentLogo += '<figure>';
-                      contentLogo +=  '<div class="portfolio-img">';
-                      contentLogo += '<a href="#" class="overlay">';
-                      contentLogo +=      '<span class="title">' + title + '</span>';
+                      contentLogo +=  '<div class="river-portfolio-img">';
+                      contentLogo += '<a href="#" class="river-overlay">';
+                      contentLogo +=      '<span class="river-title">' + title + '</span>';
                     //  contentLogo +=          '<span class="category">branding</span>';
                       contentLogo +=         '</a>';
                       contentLogo +=          '<img src="' + imglist[j] + '" alt="" class="img-responsive" ">';
@@ -285,19 +289,19 @@
                 contentLogo += '</section>';
                 contentLogo += '</div>';
 
-                 contentLogo += '<section class="section-solid">';
-                contentLogo +='<div class="container">';
+                 contentLogo += '<section class="river-solid">';
+                contentLogo +='<div class="river-container">';
                 contentLogo += '<div class="row">';
                 contentLogo +=  '<div class="col-sm-12">';
                // contentLogo += '<h3 class="section-title-footer"><i></i> </h3>';
-                contentLogo += '<h3 class="section-title-footer"><i>' + title + '</i></h3>';
-                contentLogo += '<div class="section-title-border"></div>';
+                contentLogo += '<h3 class="river-title-footer"><i>' + title + '</i></h3>';
+                contentLogo += '<div class="river-title-border"></div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
                 contentLogo += '</section>';
 
-                contentLogo += '</body>';
+               // contentLogo += '</body>';
 
 
                 element.innerHTML  = contentLogo;
@@ -308,7 +312,7 @@
                  */
                 
                 var p = imgNum;
-                var $grid = $("#portfolio-container");
+                var $grid = $("#river-portfolio-container");
                //  var groupName = $("#portfolio-container[data-groups='12'] li");
                 //var $imggrp = $('.portfolio-item li');
 
@@ -320,7 +324,7 @@
 
     
                     $grid.shuffle({
-                        itemSelector: '.portfolio-item',
+                        itemSelector: '.river-portfolio-item',
                         speed: 2000
                     }); 
 
@@ -332,19 +336,7 @@
 
                 setInterval(function() {
                         console.log("timout interval");
-                        // get group name from clicked item
-                       //  var groupName = $imggrp.attr('data-groups="["all"]"');
-
-                         //var groupName = $imggrp['data-groups="24"'];
-                         //var groupName = $("li[data-group='12']");
-                         //var groupName = $("#portfolio-container[data-groups='12'] li");
-
-                         //var inputs = $('.portfolio-item').filter(function() { 
-                         // return $(this).data("data-group") == '12'; 
-                        //});
-                        // console.log(groupName);
-                         
-                       // $grid.imagesLoaded( function() {
+            
                                  // reshuffle grid
                         var images = p.toString();       
                         $grid.shuffle('shuffle', images );
@@ -354,7 +346,6 @@
                         }
 
 
-                       // });
                     
     
                 }, 9000);
@@ -367,7 +358,7 @@
                  *  GITheWall
                  */
                 
-               /* $('.GITheWall').GITheWall({
+              /*  $('.GITheWall').GITheWall({
                     nextButtonClass: 'fa fa-chevron-right',
                     prevButtonClass: 'fa fa-chevron-left',
                     closeButtonClass: 'fa fa-times',
@@ -402,30 +393,31 @@
 
                 //header information
                // var contentLogo = '<body>'
-                var contentLogo = '<section id="portfolio" class="section-solid">';
-              //  contentLogo += '<div class="container">';
+                var contentLogo = '<section id="river-portfolio" class="river-solid">';
+                contentLogo += '<div class="river-container">';
                 contentLogo += '<div class="row">';
                 contentLogo += '<div class="col-sm-12">';
-                contentLogo += '<div class="section-title-border"></div>';
-                contentLogo += '<h3 class="section-title"><i>'+ plugin.settings.appTitle + '</i> </h3>';
-                contentLogo += '<p class="section-subtitle">' + plugin.settings.subTitle + '</p>';
+                if(plugin.settings.titleBar == 'top') contentLogo += '<div class="river-title-border"></div>';
+                contentLogo += '<h3 class="river-title-padding"><i>'+ plugin.settings.appTitle + '</i> </h3>';
+                contentLogo += '<p class="river-subtitle">' + plugin.settings.subTitle + '</p>';
+                if(plugin.settings.titleBar == 'bottom') contentLogo += '<div class="river-title-border"></div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
-               // contentLogo += '</div>';
+                contentLogo += '</div>';
                 contentLogo += '</section>';
 
               //  contentLogo += '<div class="GITheWall">'; //GitWall
                 //contentLogo += '<div id="portfolio-container" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">';
               //  contentLogo += '<div class="col-md-7">';
-               // contentLogo += '<section id="team" class="section">';
+                contentLogo += '<section id="river-team" class="river-section">';
                 contentLogo += '<div class="carousel-container">';
                  
                 contentLogo += '<div id="teamCarousel" class="owl-carousel text-center">';
 
                 for (j=0; j < imglist.length; j++ ) { //imglist.length  imglist.length - 1 when the counter gets to the end of the slideshow, restart the counter
-                contentLogo += '<div class="text-center team-member-container wow fadeInDown">';
-                contentLogo += '<div class="team-member">';
-                contentLogo += '<div class="team-member-img">';
+                contentLogo += '<div class="text-center river-member-container wow fadeInDown">';
+                contentLogo += '<div class="river-member">';
+                contentLogo += '<div class="river-member-img">';
                 contentLogo += '<img src= "' + imglist[j] + '" alt="" class="img-responsive">';
                 contentLogo += '</div>';
                 contentLogo +=  '</div>';
@@ -436,17 +428,17 @@
                // contentLogo += '</div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';  //container 
-             //   contentLogo += '</section>';
+                contentLogo += '</section>';
                // contentLogo += '</div>'; //port container
               //  contentLogo += '</div>'; //Git Wall
 
-                 contentLogo += '<section class="section-solid">';
-                contentLogo +='<div class="container">';
+                 contentLogo += '<section class="river-solid">';
+                contentLogo +='<div class="river-container">';
                 contentLogo += '<div class="row">';
                 contentLogo +=  '<div class="col-sm-12">';
-                contentLogo += '<h3 class="section-title-footer"><i>' + title + '</i> </h3>';
+                contentLogo += '<h3 class="river-title-footer"><i>' + title + '</i> </h3>';
                 //contentLogo += '<h3 class="section-title"><i>' + title + '</i></h3>';
-                contentLogo += '<div class="section-title-border"></div>';
+                contentLogo += '<div class="river-title-border"></div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';
                 contentLogo += '</div>';

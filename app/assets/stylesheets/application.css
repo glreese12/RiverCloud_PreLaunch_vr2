@@ -13,12 +13,12 @@
  *= require bootstrapValidator.min
  *= require ladda-themeless.min
  *= require animate.min
- *= require owl.carousel
  *= require owl.theme
  *= require owl.transitions
+ *= require owl.carousel
+ *= require jquery.rivercloud
  *= require_self
  *= require app
- * require jquery.rivercloud
  */
 
 

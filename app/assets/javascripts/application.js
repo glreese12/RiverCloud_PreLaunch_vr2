@@ -25,6 +25,7 @@
 //= require spin.min
 //= requre ladda.min
 //= require retina.min
+//= require imagesloaded.pkgd.min
 //= require wow.min
 //= require init
 //= require jquery.rivercloud
@@ -97,7 +98,7 @@ $(document).ready(function() {
 		}
     };
 
-    $('#riverContent').riverCloud({'contentId' : '32XUM5SPCKDX', 'statusLogo' : 'true' , 'styleType' : 'smoothSlide'});
+    $('#riverContent').riverCloud({'contentId' : '32XUM5SPCKDX', 'statusLogo' : 'true' , 'titleBar' : 'top', 'styleType' : 'shuffleSlide'});
 
 
 
