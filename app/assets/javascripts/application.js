@@ -17,6 +17,9 @@
 //= require foundation
 //= require jquery.backstretch.min
 //= require jquery.countdown.min
+//= require jQuery.GI.TheWall.min
+//= require jquery.shuffle.min
+//= require owl.carousel.min 
 //= require bootstrapValidator.min
 //= require validator/emailAddress
 //= require spin.min
@@ -24,6 +27,7 @@
 //= require retina.min
 //= require wow.min
 //= require init
+//= require jquery.rivercloud
 // require_tree .
 
 //$(function(){ $(document).foundation(); });
@@ -92,6 +96,9 @@ $(document).ready(function() {
 			$(".tagline").fadeTo( "slow", 1 );
 		}
     };
+
+    $('#riverContent').riverCloud({'contentId' : '32XUM5SPCKDX', 'statusLogo' : 'true' , 'styleType' : 'smoothSlide'});
+
 
 
 		

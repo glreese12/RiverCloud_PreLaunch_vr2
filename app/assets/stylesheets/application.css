@@ -12,9 +12,13 @@
  *= require font-awesome.min
  *= require bootstrapValidator.min
  *= require ladda-themeless.min
- *= rewquire animate.min
+ *= require animate.min
+ *= require owl.carousel
+ *= require owl.theme
+ *= require owl.transitions
  *= require_self
  *= require app
+ * require jquery.rivercloud
  */
 
 
