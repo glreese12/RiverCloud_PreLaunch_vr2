@@ -17,15 +17,17 @@
 			<div class="page">
 				<div class="wrapper">
 					<div class="container">
-						<!--<img src="<%# asset_path("logo/logo.png") %>" alt="Logo"> -->
-						<h2>RiverCloud</h2>
-						<h1 class="heading">coming soon</h1>
+						<img src="<% asset_path("logo/logo.png") %>" alt="Logo"> 
+						<h2></h2> 
+						<h1 class="heading">RiverCloud</h1>
+						<p> Visualize Your Social Beat </p>
+						<!--<p>~ Real Time ~</p> -->
 						<p>
-							Community Network ~ Personalized Experience
+							Community Branding ~ Personalized Experience
 						</p>
-						<div class="row">
+						<!--<div class="row">
 							<div id="countdown"></div>
-						</div>
+						</div> -->
 						<!-- Subscription form -->
 						<!--<form class="form-inline signup" action="php/signupForm.php" role="form" id="signupForm"> -->
 						<%= form_tag '/interested', :class=> 'form-inline', :id=>"signupForm"  do %>  <!--:id => 'signupForm', :class => 'form-inline' do 	-->
@@ -35,12 +37,13 @@
 							</div>
 							<div class="form-group">
 								<!--<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left"><span class="ladda-label">Get notified!</span></button> -->
-								 <%= submit_tag 'Get notified', class: 'btn btn-theme ladda-button', 'data-style'=>"expand-left" %>
+								 <%= submit_tag 'More Info', class: 'btn btn-theme ladda-button', 'data-style'=>"expand-left" %>
 							</div>
 							<%= hidden_field_tag :ref, "#{@ref}" %>
 						<% end %>	
 						 <div data-alert class="alert-box radius"><%= alert %></div>
 						<!--</form> --> 
+					</div>
 						<footer class="text-center">
 							<div class="social">
 								<a href="#" class="btn btn-theme"><i class="fa fa-facebook"></i></a> 
@@ -51,7 +54,6 @@
 								<a href="#" class="btn btn-theme"><i class="fa fa-linkedin"></i></a> -->
 							</div>
 						</footer>
-					</div>
 					<div class="arrow-down">
 						<a class="scroll" href="#about" id="scroll"><i class="fa fa-angle-double-down"></i></a>
 					</div>
@@ -71,10 +73,11 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<p class="lead">
-							<strong>RiverCloud, Inc</strong> is a cloud-based content management application to support dynamic updating and rendering of media content on web and digital display frameworks. Keep your brand relevant with current content.  
+							<strong>RiverCloud, Inc</strong> is a Boulder, Colorado company that focuses on the aggregation of social content to provide a dynamic visual experience. The RiverCloud application organizes and streams personalized content for real time display in web frameworks. The workflow promotes social engagement through the timely flow of community branding! 
 						</p>
-						<p>RiverCloud's cloud-based workflow provides a simple collaborative approach to organize, manage and distribute media content from any where in the world directly into your registered frameworks. 
-						</p>
+						<center><P>~ Community Branding ~ Personalized Experience ~</p></center>  
+						<!--<p>RiverCloud's cloud-based workflow provides a simple collaborative approach to organize, manage and distribute media content from any where in the world directly into your registered frameworks.  
+						</p> -->
 						<div class="row">
 							<div class="col-sm-4 feature-box-container">
 								<div class="feature-box wow fadeInDown">
@@ -83,7 +86,7 @@
 									</div>
 									<div class="description">
 										<h4>Cloud-Based Application</h4>
-										<p>RiverCloud's application makes it simple to collectively load and manage content.
+										<p>Application makes it easy to aggregate and organize the latest content.
 										</p>
 									</div>
 								</div>
@@ -95,7 +98,7 @@
 									</div>
 									<div class="description">
 										<h4>Real-Time Streaming</h4>
-										<p>RiverCloud's platform supports real-time streaming of your personalized content
+										<p>Platform supports real-time updates and streaming to display devices.
 										</p>
 									</div>
 								</div>
@@ -106,8 +109,8 @@
 										<i class="fa fa-heart"></i>
 									</div>
 									<div class="description">
-										<h4>Integrated Experience</h4>
-										<p>RiverCloud javascript plugin is adaptable  to most frameworks.  
+										<h4>Community Branding</h4>
+										<p>Real time visualization of your community pulse. See the conversation.
 										</p>
 									</div>
 								</div>
@@ -118,9 +121,199 @@
 			</div>
 		</section>
 
-		<div  class="riverMain" id="riverContent"></div>
+	  <!--  <div id="pricing-charts"> -->
+	 <!--  <section id="about" class="section"> -->
+		<div class="content-wrapper">
 		
-		<!-- Team -->
+		<!--<div class="first-option"> -->
+			<div class="row header_charts">
+				<div class="col-md-12">
+					<h3>Flexible plans</h3>
+					<p>Choose the pricing that fits your needs</p>
+				</div>
+			</div>
+			<div class="row charts">
+				<div class="col-md-3">
+					<div class="chart first">
+						<div class="plan-name">Local</div>
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">34.99</span>
+							<span class="period">/month</span>
+						</div>
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">10</span>
+							    Playlists
+							</div>
+							<div class="spec">
+								<span class="variable">10 GB</span>
+								Personal Storage
+							</div>
+							<div class="spec">
+								<span class="variable">2</span>
+								Display Accounts
+							</div>
+							<div class="spec">
+								<span class="variable">5</span>
+								Social Data Feeds
+							</div>
+							<div class="spec">
+								<span class="variable">Daily</span>
+								Auto Updates
+							</div>
+						</div>
+					<!--	<a class="button" href="<%# form_pricing_index_path %>">
+							<span>Start free trial</span>
+						</a> -->
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="chart featured">
+						<%= image_tag "ribbon.png", class: "popular" %>
+						<div class="plan-name">Profesional</div>
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">64.99</span>
+							<span class="period">/month</span>
+						</div>						
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">20</span>
+							    Playlists
+							</div>
+							<div class="spec">
+								<span class="variable">10 GB</span>
+								Personal Storage
+							</div>
+							<div class="spec">
+								<span class="variable">4</span>
+								Display Accounts
+							</div>
+							<div class="spec">
+								<span class="variable">5</span>
+								Social Data Feeds
+							</div>
+							<div class="spec">
+								<span class="variable">Daily</span>
+								Auto Updates
+							</div>
+						</div>
+					<!--	<a class="button" href="<%# form_pricing_index_path %>">
+							<span>Start free trial</span>
+						</a> -->
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="chart">
+						<div class="plan-name">Premium</div>
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">99.99</span>
+							<span class="period">/month</span>
+						</div>
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">40</span>
+							    Playlists
+							</div>
+							<div class="spec">
+								<span class="variable">20 GB</span>
+								Personal Storage
+							</div>
+							<div class="spec">
+								<span class="variable">8</span>
+								Display Accounts
+							</div>
+							<div class="spec">
+								<span class="variable">5</span>
+								Social Data Feeds
+							</div>
+							<div class="spec">
+								<span class="variable">Hourly</span>
+								Auto Updates
+							</div>
+						</div>
+					<!--	<a class="button" href="<%# form_pricing_index_path %>">
+							<span>Start free trial</span>
+						</a> -->
+					</div>
+				</div>	
+				<div class="col-md-3">
+					<div class="chart last">
+						<div class="plan-name">Events</div>
+						<div class="quantity">
+							<span class="dollar">$</span>
+							<span class="price">199.99</span>
+							<span class="period">/day</span>
+						</div>
+						<div class="specs">
+							<div class="spec">
+								<span class="variable">20</span>
+							    Playlists
+							</div>
+							<div class="spec">
+								<span class="variable">40 GB</span>
+								Personal Storage
+							</div>
+							<div class="spec">
+								<span class="variable">10</span>
+								Display Accounts
+							</div>
+							<div class="spec">
+								<span class="variable">5</span>
+								Social Data Feeds
+							</div>
+							<div class="spec">
+								<span class="variable">Hourly</span>
+								Auto Updates
+							</div>
+							<div class="spec">
+								<span class="variable">4</span>
+								Hours Consultation
+							</div>
+						</div>
+					<!--	<a class="button" href="<%# form_pricing_index_path %>">
+							<span>Start free trial</span>
+						</a> -->
+					</div>
+				</div>			
+			</div>
+			<div class="row message">
+				<p>
+					All of our plans come with a 30 day trial </p> <!-- with no credit card required, we also offer a 
+					<a href="<%# form_pricing_index_path %>">free plan</a>. -->
+				</p>
+			</div>
+			</div>
+	<!--	</div> -->
+<!--	</section>  -->
+
+			<!-- 16:9 aspect ratio -->
+	 	<section id="about"class="section"> 
+	 	<div class="container">
+	 			<div class="row">
+					<div class="col-sm-12">
+						<h3 class="section-title">RiverCloud.tv</h3>
+						<div class="section-title-border"></div>
+					</div>
+				</div>
+  		 <div class="row">
+    		<div class="col-sm-12"> 
+				<div class="h_iframe"> <!--"embed-responsive embed-responsive-16by9"> class="embed-responsive-item"-->
+				<center>
+				  <img class="ratio" src="http://placehold.it/16x9"/>
+				  <iframe  src="https://s3.amazonaws.com/rivercloud-production/rivercloudtv/e37c967bf6f810917c30da9a373ed374/rivercloud-master/index.html"></iframe>
+				</center>
+			  </div>
+			</div> 
+		  </div>
+		 </div> 
+		</section>
+
+		<!--<div  class="riverMain" id="riverContent"></div> ->
+		
+		Team  -->
 	<!--	<section id="team" class="section">
 			<div class="container">
 				<div class="row">

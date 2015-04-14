@@ -98,7 +98,7 @@ $(document).ready(function() {
 		}
     };
 
-    $('#riverContent').riverCloud({'contentId' : '32XUM5SPCKDX', 'statusLogo' : 'true' , 'titleBar' : 'top', 'styleType' : 'fullSlide'});
+   /* $('#riverContent').riverCloud({'contentId' : '32XUM5SPCKDX', 'statusLogo' : 'true' , 'titleBar' : 'top', 'styleType' : 'fullSlide'}); */
 
 
 

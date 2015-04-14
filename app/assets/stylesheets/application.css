@@ -17,6 +17,7 @@
  *= require owl.transitions
  *= require owl.carousel
  *= require jquery.rivercloud
+ *= require pricing-charts
  *= require_self
  *= require app
  */

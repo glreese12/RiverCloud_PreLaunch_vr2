@@ -1,0 +1,203 @@
+/*#pricing-charts { */
+
+	/*#content {
+		padding: 40px; */
+
+		.content-wrapper {
+			margin-top: 0;
+			margin-left: 20px;
+		} 
+	/*} */
+
+
+
+	/*.first-option {
+		margin-bottom: 100px;
+	}	*/
+
+		.header_charts {
+			text-align: center;
+		}
+
+			 .header_charts  h3 {
+				font-size: 24px;
+				/*color: #444; */
+				color: white;
+				line-height: 25px;
+				font-weight: 500;
+				margin-bottom: 7px;
+			}
+
+			.header_charts  p {
+				font-size: 16px;
+				color: white;
+				font-weight: 400;
+				/*color: #888; */
+			}
+		
+
+		 .charts {
+			margin-top: 45px;
+		}
+
+			.charts .chart {
+				background-color: #fff;
+				/*background-color: #626262; */
+				border: 1px solid #D8D8D8;
+				border-radius: 5px;			
+				box-shadow: 0px 0px 2px 0px rgba(181, 181, 181, 0.3);
+				padding: 20px 40px 30px;
+				position: relative;
+				text-align: center;
+				width: 97%;
+
+				min-height: 315px;
+				position: relative;
+				top: 18px;
+			}
+
+				@media(min-width: 992px) {
+					.charts .chart  .first {
+						float: right;
+						left: 45px;
+					}
+
+					 .charts .chart .last {
+						left: -45px;
+					}
+				}
+
+				@media (max-width: 991px) {
+					.charts .chart {	
+						float: none !important;
+						left: 0px !important;
+						top: 0px !important;
+						margin: 0 auto;
+						width: 55%;
+						margin-bottom: 25px !important;
+					}
+
+					 .charts .chart .last {
+						margin-bottom: 0px !important;
+					}
+				}
+
+				@media (max-width: 600px) {
+						.charts .chart {
+						width: 90% !important;
+					  }
+			
+
+						.charts .chart .featured {					
+							z-index: 999;
+							border-color: #C3DCEB;
+							box-shadow: 0 0 13px -2px #B4DAF1;
+		                }
+	            }
+					@media(min-width: 992px) {
+							.charts .chart {
+							margin: 0 auto;
+							top: 5px;
+							min-height: 450px;
+						 }
+					}
+
+					.charts .chart .popular {
+						position: absolute;
+						top: 0px;
+						left: 0px;
+					}
+
+					.charts .chart .quantity {
+						margin-top: 15px;
+						padding-bottom: 5px;
+					}
+
+					.charts .chart .button {
+						margin-top: 22px;
+					}
+				
+
+				.charts .chart .plan-name {
+					text-align: center;
+					font-size: 20px;
+					font-weight: 400;
+					/*color: #444; */
+				    color:#626262;
+					width: 90%;
+					margin: 0 auto;
+					margin-top: 5px;
+				}
+
+			    .charts .chart .quantity {
+					text-align: center;
+					border-bottom: 1px solid #d5d5d5;					
+					margin-top: 10px;
+					color:#626262;
+				}
+
+					.charts .chart .quantity .dollar {
+						font-size: 19px;
+						position: relative;
+						/*color: black; */
+						color:#626262;
+						top: -18px;
+					}
+
+					.charts .chart .quantity .price {
+						font-size: 49px;
+						color:#626262;
+						/*color: black; */
+					}
+
+					.charts .chart .quantity .period {
+						font-size: 17px;
+						position: relative;
+						color:#626262;
+						/*color: black; */
+						top: -8px;
+						margin-left: 4px;
+					}
+				
+
+				.specs {
+					margin-top: 20px;
+				}
+
+					.specs .spec {
+						font-size: 15px;
+						color: #5D636D;
+						text-align: center;
+						margin-bottom: 15px;
+					}
+
+						.specs .variable {
+							color: #1FAFE7;
+							font-weight: 600;
+						}
+				
+
+				 .charts .chart .button {
+					margin-top: 20px;
+					height: 38px;
+				}
+
+					 .charts .chart .button span {
+						height: 36px;
+						line-height: 35px;
+						padding-left: 23px;
+						padding-right: 23px;
+					}
+
+		.message p {
+				text-align: center;
+				/*color: #4A5366; */
+				color: white;
+				margin-top: 23px;
+		}
+
+		
+
+		
+	
+
