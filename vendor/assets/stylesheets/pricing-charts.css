@@ -3,9 +3,19 @@
 	/*#content {
 		padding: 40px; */
 
+		/*.row.no-pad {
+		  margin-right:0;
+		  margin-left:0;
+		}
+
+		.row.no-pad > [class*='col-'] {
+		  padding-right:0;
+		  padding-left:0;
+		} */
+
 		.content-wrapper {
 			margin-top: 0;
-			margin-left: 20px;
+			margin-left: 2px;
 		} 
 	/*} */
 
@@ -37,6 +47,7 @@
 		
 
 		 .charts {
+		 	padding: 40px;
 			margin-top: 45px;
 		}
 
@@ -195,6 +206,7 @@
 				color: white;
 				margin-top: 23px;
 		}
+
 
 		
 
