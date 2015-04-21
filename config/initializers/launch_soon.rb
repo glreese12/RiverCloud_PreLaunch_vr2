@@ -8,13 +8,13 @@ MAILCHIMP_LIST_ID = 'ae80e85ff9'
 MAILCHIMP_CONTACT_ID = 'aca60eed1c'
 
 # This site's domain name, including the www. if required (ie: google.com):
-SITE_DOMAIN = 'rivercloud.co'
+SITE_DOMAIN = 'rivercloud.com'
 
 # Title tag for the site:
-SITE_TITLE = 'RiverCloud.tv'
+SITE_TITLE = 'RiverCloud'
 
 # Keywords for the site:
-SITE_KEYWORDS = 'key, words'
+SITE_KEYWORDS = 'rivercloud, river, cloud, social, media, festivals, community'
 
 # Description for the site, also used in Tweet so keep it short:
 SITE_DESCRIPTION = '~Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
@@ -29,4 +29,4 @@ SITE_COMING = "COMING SOON!"
 SITE_GOOGLE_ANALYTICS = 'UA-54543009-1'
 
 # Twitter name for site:
-TWITTER_NAME = 'RiverCloudCo'
+TWITTER_NAME = 'RiverCloudTV'
