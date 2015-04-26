@@ -14,10 +14,10 @@ SITE_DOMAIN = 'rivercloud.com'
 SITE_TITLE = 'RiverCloud'
 
 # Keywords for the site:
-SITE_KEYWORDS = 'rivercloud, river, cloud, social, media, festivals, community'
+SITE_KEYWORDS = 'rivercloud, river, cloud, social, media, festivals, community, branding, marketing, photograpy, boulder, colorado'
 
 # Description for the site, also used in Tweet so keep it short:
-SITE_DESCRIPTION = '~Reflections of your life ~ real time ~ COMING SOON! Sign-up to keep updated!'
+SITE_DESCRIPTION = 'RiverCloud, Inc is a Boulder, Colorado based company that promotes community branding by packaging social content into a dynamic visual experience.'
 
 # Blurb about site, displayed on main page:
 SITE_BLURB = '~ Channel your experience ~'
