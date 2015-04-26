@@ -11,7 +11,7 @@ MAILCHIMP_CONTACT_ID = 'aca60eed1c'
 SITE_DOMAIN = 'rivercloud.com'
 
 # Title tag for the site:
-SITE_TITLE = 'RiverCloud'
+SITE_TITLE = 'RiverCloud, Community branding, Personalized Network, Social Experience'
 
 # Keywords for the site:
 SITE_KEYWORDS = 'rivercloud, river, cloud, social, media, festivals, community, branding, marketing, photograpy, boulder, colorado'
